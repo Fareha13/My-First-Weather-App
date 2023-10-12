@@ -134,11 +134,10 @@ img {
   width: 100px;
 }
 
-.weather-icon {
+.weather-icons {
   position: relative;
   height: 64px;
   width: 64px;
-  margin-right: 5px;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -149,13 +148,14 @@ img {
 
 .temperature {
   display: inline-block;
-  font-size: 5vw;
+  padding: 15px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
   font-weight: bold;
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  color: rgb(33, 33, 33);
+  font-size: 5vw;
 }
 
 .additional-info {
@@ -167,7 +167,8 @@ img {
 }
 
 .degree {
-  position: inline-block;
+  position: relative;
+  display: inline;
   padding-right: 4px;
   padding-left: 1px;
   bottom: 25px;
@@ -180,49 +181,23 @@ img {
   text-align: left;
 }
 
-.week {
-  position: relative;
+.weekday-forecast {
+  text-align: center;
+  font-weight: 600;
 }
 
-.weather-icons {
-  position: relative;
-  display: inline;
-  height: 32px;
-  width: 32px;
-  margin-top: 0px;
-  margin: 0;
+.weekday-temp-celsius {
+  color: #596e79;
+  font-weight: 400;
 }
 
-.sun1 {
-  margin: 0 auto;
+.weekday-temp-fahrenheit {
+  color: #596e79;
+  font-weight: 400;
 }
 
-.sun2 {
-  position: relative;
-  margin-left: 0px;
-  right: 3px;
-}
-.partcloud {
-  position: relative;
-  right: 3px;
-}
-.rain {
-  position: relative;
-  right: 4px;
-}
-
-.cloudy {
-  position: relative;
-  right: 1px;
-}
-
-.message {
-  position: relative;
-  font-weight: bold;
-  border: 1px solid grey;
-  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  border-radius: 4px;
-  width: 244px;
-  top: 17px;
-  left: 184px;
+.text-center {
+  margin-top: 20px;
+  padding: 0;
+  margin-bottom: 0px;
 }
