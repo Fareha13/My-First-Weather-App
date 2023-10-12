@@ -149,7 +149,7 @@ img {
 
 .temperature {
   display: inline-block;
-  font-size: 30px;
+  font-size: 5vw;
   font-weight: bold;
   .clearfix::after {
     content: "";
