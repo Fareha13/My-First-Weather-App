@@ -53,8 +53,9 @@ img {
   border-style: none;
   margin-top: 20px;
   margin-right: 5px;
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
+  margin-right: 0px;
 }
 
 .form-control {
@@ -157,6 +158,8 @@ img {
 .float-left {
   float: left !important;
 }
+img {
+}
 
 .temperature {
   display: inline-block;
@@ -164,12 +167,12 @@ img {
   padding-top: 15px;
   padding-right: 0px;
   padding-left: 0px;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-left: 0px;
   font-weight: bold;
   color: rgb(33, 33, 33);
   font-size: 3vw;
-  line-height: 2;
+  line-height: 1;
 }
 
 .additional-info {
@@ -187,7 +190,8 @@ img {
   bottom: 25px;
   font-size: 11px;
   font-weight: bold;
-  top: -20px;
+  top: -5px;
+  line-height: 1;
 }
 
 .locational-info {
