@@ -210,8 +210,9 @@ img {
   font-weight: 400;
 }
 
-.text-center {
-  margin-top: 20px;
+.text {
+  text-align: left;
+  margin-top: 0px;
   padding: 0;
   margin-bottom: 0px;
 }
