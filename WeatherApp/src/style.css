@@ -205,15 +205,6 @@ img {
   text-align: left;
 }
 
-.weekday-forecast {
-  text-align: center;
-  font-weight: 600;
-}
-
-.forecast-day-selector {
-  border-radius: 4px;
-  background-color: #ceddeb;
-}
 
 .weather-forecast-temperatures-max {
   opacity: 0.8;

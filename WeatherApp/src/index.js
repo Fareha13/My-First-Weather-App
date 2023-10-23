@@ -28,6 +28,37 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+ let days = ["Tues", "Wed", "Thurs"];
+
+  let forecastHTML = `<div class="row">`;
+ 
+  days.forEach(function(day) {
+ forecastHTML = forecastHTML +
+   `
+      <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weekday-weather-emoji">
+        <img src="WeatherApp/Images/2cloud32px.png" alt="cloudy" width="42"/>
+        </div>
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperatures-max"> 29°</span>
+           | 
+          <span class="weather-forecast-temperatures-min"> 12°</span>
+        </div>
+        </div>
+      </div>
+  `;
+  })
+ 
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+console.log(forecastHTML);
+}
+
+
 //Search City feature
 function displayWeatherCondition(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -36,6 +67,8 @@ function displayWeatherCondition(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+
+ 
 
   let celsiusTemperature = response.data.main.temp;
 
@@ -109,3 +142,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Paris");
+displayForecast();
