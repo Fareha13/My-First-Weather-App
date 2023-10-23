@@ -159,7 +159,6 @@ img {
   float: left !important;
 }
 
-
 .temperature {
   display: inline-block;
   padding: 15px;
@@ -211,14 +210,22 @@ img {
   font-weight: 600;
 }
 
-.weekday-temp-celsius {
+.forecast-day-selector {
+  border-radius: 4px;
+  background-color: #ceddeb;
+}
+
+.weather-forecast-temperatures-max {
+  opacity: 0.8;
+}
+
+.weather-forecast-temperatures-min {
   color: #596e79;
   font-weight: 400;
 }
 
-.weekday-temp-fahrenheit {
-  color: #596e79;
-  font-weight: 400;
+.weather-forecast-temperatures {
+  margin-top: 20px;
 }
 
 .text {
@@ -227,3 +234,4 @@ img {
   padding: 0;
   margin-bottom: 0px;
 }
+
